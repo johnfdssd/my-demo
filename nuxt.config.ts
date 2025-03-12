@@ -24,6 +24,7 @@ export default defineNuxtConfig({
   prerender: {
     // 预渲染的路由
     routes: ['/','/blog','/blog/:id'], 
+    crawlLinks: true // 自动爬取链接生成静态页
   }
   // 如果有使用 API，建议设置 routeRules
   // routeRules: {

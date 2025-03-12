@@ -1,8 +1,11 @@
 {
-    "version": 2,
-    "buildCommand": "npm run build",
-    "outputDirectory": ".output/public",
-    "github": {
-      "silent": true
-    }
-  }
+  "version": 2,
+  "buildCommand": "npm run generate",
+  "routes": [
+      {
+          "src": "/api/rebuild",
+          "dest": "/server/api/rebuild.post.ts",
+          "methods": ["POST"]
+      }
+  ]
+}
