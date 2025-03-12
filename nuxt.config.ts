@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     static: true,
-    preset: 'static', // 明确指定静态预设
+    
     prerender: {
       crawlLinks: true,
       routes: ['/', '/posts']
