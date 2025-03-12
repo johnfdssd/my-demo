@@ -12,8 +12,10 @@ export default defineNuxtConfig({
     cookie: {},
     cookieName: 'strapi_jwt'
   },
+  
   // 设置静态生成
   ssr: true,
+  target: 'static', 
   nitro: {
     // preset: 'vercel'
     // static:true
