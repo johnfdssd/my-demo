@@ -16,7 +16,8 @@ export default defineNuxtConfig({
   ssr: true,
   nitro: {
     // preset: 'vercel'
-    static:true
+    // static:true
+    preset: 'static', // 明确指定静态预设
   },
   // 如果有使用 API，建议设置 routeRules
   // routeRules: {
