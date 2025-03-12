@@ -15,10 +15,11 @@ export default defineNuxtConfig({
   // 设置静态生成
   ssr: true,
   nitro: {
-    preset: 'vercel'
+    // preset: 'vercel'
+    static:true
   },
   // 如果有使用 API，建议设置 routeRules
-  routeRules: {
-    '/api/**': { cors: true }
-  }
+  // routeRules: {
+  //   '/api/**': { cors: true }
+  // }
 })
