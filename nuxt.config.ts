@@ -13,8 +13,6 @@ export default defineNuxtConfig({
     cookieName: 'strapi_jwt'
   },
   nitro: {
-    prerender: {
-      routes: ['/posts/1', '/posts/22'] // 预渲染指定页面
-    }
+    static: true,
   },
 })
