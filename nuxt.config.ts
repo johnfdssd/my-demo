@@ -14,5 +14,13 @@ export default defineNuxtConfig({
   },
   nitro: {
     static: true,
+    preset: 'static', // 明确指定静态预设
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/posts']
+    }
   },
+  routeRules: {
+    '/**': { static: true } // 强制所有路由生成静态文件
+  }
 })
