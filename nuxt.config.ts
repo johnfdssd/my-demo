@@ -19,6 +19,10 @@ export default defineNuxtConfig({
     // static:true
     preset: 'static', // 明确指定静态预设
   },
+  prerender: {
+    // 预渲染的路由
+    routes: ['/','/blog','/blog/:id'], 
+  }
   // 如果有使用 API，建议设置 routeRules
   // routeRules: {
   //   '/api/**': { cors: true }
