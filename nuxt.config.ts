@@ -12,15 +12,13 @@ export default defineNuxtConfig({
     cookie: {},
     cookieName: 'strapi_jwt'
   },
+  // 设置静态生成
+  ssr: true,
   nitro: {
-    static: true,
-    
-    prerender: {
-      crawlLinks: true,
-      routes: ['/', '/posts']
-    }
+    preset: 'vercel'
   },
+  // 如果有使用 API，建议设置 routeRules
   routeRules: {
-    '/**': { static: true } // 强制所有路由生成静态文件
+    '/api/**': { cors: true }
   }
 })
